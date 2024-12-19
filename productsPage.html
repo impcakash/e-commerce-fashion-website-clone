@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products Page</title>
+  <link rel="icon" href="https://assets.ajio.com/static/img/favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/zproductsPage.css">
+</head>
+
+<body>
+  <div id="navbar_division"></div>
+
+  <div id="mens">
+    <div id="filters">
+      <div>
+        <div id="refineby">
+          <p id="refine">Refine By</p>
+          <img id="darrow"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLlFJyXnlww4XPP-vQQ3PNh7_y8LMYuUMXhx7LxZobswW6Cm2GlzebSYWWpMqebE3OPBA&usqp=CAU"
+            alt="" />
+        </div>
+
+        <div id="list">
+          <div id="gender">
+            <div id="border">
+              <div id="plusGender" class="filterHeader">
+                <div>+</div>
+                <div>Gender</div>
+              </div>
+              <div id="rightGender" class="filterOptions">
+                <input type="checkbox" name="men" checked />
+                <label for="">Men</label>
+              </div>
+            </div>
+          </div>
+
+          <div id="category">
+            <div id="border">
+              <div id="plusCategory" class="filterHeader">
+                <div>+</div>
+                <div>Category</div>
+              </div>
+              <div id="rightCategory" class="filterOptions">
+                <input type="checkbox" name="men" checked />
+                <label for="">Jackets & Coats</label>
+              </div>
+            </div>
+          </div>
+
+          <div id="price">
+            <div id="border">
+              <div id="plusPrice" class="filterHeader">
+                <div>+</div>
+                <div>Price</div>
+              </div>
+              <div id="rightPrice" class="filterOptions">
+                <input type="checkbox" name="men" onclick="under500(array)" />
+                <label for="">Below Rs.500</label><br />
+                <input type="checkbox" name="men" onclick="f500t1000(array)" />
+                <label for="">Rs.500-1000</label><br />
+                <input type="checkbox" name="men" onclick="f1000t1500(array)" />
+                <label for="">Rs.1001-1500</label><br />
+                <input type="checkbox" name="men" onclick="f1500t2000(array)" />
+                <label for="">Rs.1501-2000</label><br />
+                <input type="checkbox" name="men" onclick="f2000t2500(array)" />
+                <label for="">Rs.2001-2500</label>
+              </div>
+            </div>
+          </div>
+
+          <div id="brands">
+            <div id="border">
+              <div id="plusBrands" class="filterHeader">
+                <div>+</div>
+                <div>Brands</div>
+              </div>
+              <div id="rightBrands" class="filterOptions">
+                <input type="checkbox" name="men" onclick="fortCollins(array)" />
+                <label for="">FORT COLLINS</label><br />
+                <input type="checkbox" name="men" onclick="highStar(array)" />
+                <label for="">HIGH STAR</label><br />
+                <input type="checkbox" name="men" onclick="performax(array)" />
+                <label for="">PERFORMAX</label><br />
+                <input type="checkbox" name="men" onclick="levis(array)" />
+                <label for="">LEVIS</label><br />
+                <input type="checkbox" name="men" onclick="indianTerrain(array)" />
+                <label for="">INDIAN TERRAIN</label><br />
+                <label for="">MORE</label>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="discount">
+            <div id="border">
+              <div id="plusDiscount" class="filterHeader">
+                <div>+</div>
+                <div>Discount</div>
+              </div>
+              <div id="rightDiscount" class="filterOptions">
+                <input type="checkbox" name="men" onclick="disc0To20(array)" />
+                <label for="">0-20%</label><br />
+                <input type="checkbox" name="men" onclick="disc21To30(array)" />
+                <label for="">21-30%</label><br />
+                <input type="checkbox" name="men" onclick="disc31To40(array)" />
+                <label for="">31-40%</label><br />
+                <input type="checkbox" name="men" onclick="disc41To50(array)" />
+                <label for="">41-50%</label><br />
+                <input type="checkbox" name="men" onclick="disc51To80(array)" />
+                <label for="">51-80%</label><br />
+              </div>
+            </div>
+          </div>
+
+          <div id="colors">
+            <div id="border">
+              <div id="plusColors" class="filterHeader">
+                <div>+</div>
+                <div>Colors</div>
+              </div>
+              <div id="rightColors" class="filterOptions">
+                <input type="checkbox" name="men" onclick="black(array)" />
+                <label for=""></label>Black<br />
+                <input type="checkbox" name="men" onclick="blue(array)" />
+                <label for="">Blue</label><br />
+                <input type="checkbox" name="men" onclick="jetBlack(array)" />
+                <label for="">Jet-Black</label><br />
+                <input type="checkbox" name="men" onclick="olive(array)" />
+                <label for="">Olive</label><br />
+                <input type="checkbox" name="men" onclick="grey(array)" />
+                <label for="">Grey</label><br />
+                <label for="">MORE</label>
+              </div>
+            </div>
+          </div>
+
+          <div id="occasion">
+            <div id="border">
+              <div id="plusOccasion" class="filterHeader">
+                <div>+</div>
+                <div>Occasion</div>
+              </div>
+              <div id="rightOccasion" class="filterOptions">
+                <input type="checkbox" name="men" />
+                <label for="">Active</label><br />
+                <input type="checkbox" name="men" />
+                <label for="">ACTIVE</label><br />
+                <input type="checkbox" name="men" />
+                <label for="">Casual</label><br />
+                <input type="checkbox" name="men" />
+                <label for="">CASUAL</label><br />
+                <input type="checkbox" name="men" />
+                <label for="">Occasion</label><br />
+                <label for="">MORE</label>
+              </div>
+            </div>
+          </div>
+
+          <div id="size">
+            <div id="border">
+              <div id="plusSize" class="filterHeader">
+                <div>+</div>
+                <div>Size & Fit</div>
+              </div>
+              <div id="rightSize" class="filterOptions">
+                <input type="checkbox" name="men" />
+                <label for="">XXS</label><br />
+                <input type="checkbox" name="men" />
+                <label for="">XS</label><br />
+                <input type="checkbox" name="men" />
+                <label for="">S</label><br />
+                <input type="checkbox" name="men" />
+                <label for="">M</label><br />
+                <input type="checkbox" name="men" />
+                <label for="">L</label>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div id="product">
+      <div id="content">
+        <div id="menheader">MEN'S</div>
+        <div id="jacketheader">Jackets & Coats</div>
+        <div id="contentheader">
+          Versatile and sophisticated, AJIO brings to you a wide range of
+          coats and jackets for men. Be it printed, embroidered, ripped or
+          distressed – we have everything. Browse through cool gilets, quilted
+          bombers and winter jackets to keep your fashion game on fleek this
+          cold season. Let the bad boy out to play with leather jackets or
+          sharpen up your look with traditional men’s coats
+        </div>
+      </div>
+      <div id="container">
+        <div>
+          <div></div>
+        </div>
+        <div id="select-tab">
+          <label for="" class="alignment">SORT BY</label>
+          <select name="" id="select">
+            <option value="What's New" id="new">What's New</option>
+            <option value="Relevance" id="relevance">Relevance</option>
+            <option value="Discount" id="discount">Discount</option>
+            <option value="Price(highest first)" id="high">
+              Price(highest first)
+            </option>
+            <option value="Price(lowest first)" id="low">
+              Price(lowest first)
+            </option>
+          </select>
+        </div>
+      </div>
+      &nbsp;
+      <div></div>
+      <div id="data"></div>
+    </div>
+  </div>
+  <div id="popupBackgroundBlack">
+    <div id="popupProductDetails">
+      <div>
+        <img
+          src="https://assets.ajio.com/medias/sys_master/root/20210824/qnyN/6124089d7cdb8cb824031048/performax_navy_blue_running_zip-front_dobby_jacket.jpg"
+          id="image1extra" onclick="displayImage1()">
+        <img
+          src="https://assets.ajio.com/medias/sys_master/root/20210824/qnyN/6124089d7cdb8cb824031048/performax_navy_blue_running_zip-front_dobby_jacket.jpg"
+          id="image2extra" onclick="displayImage2()">
+        <img
+          src="https://assets.ajio.com/medias/sys_master/root/20210824/qnyN/6124089d7cdb8cb824031048/performax_navy_blue_running_zip-front_dobby_jacket.jpg"
+          id="image3extra" onclick="displayImage3()">
+      </div>
+      <div>
+        <img
+          src="https://assets.ajio.com/medias/sys_master/root/20210824/qnyN/6124089d7cdb8cb824031048/performax_navy_blue_running_zip-front_dobby_jacket.jpg"
+          id="mainDisplayImage">
+      </div>
+      <div>
+        <div onclick="closeDetailsDiv()">
+          <span class="material-icons-outlined">
+            close
+          </span>
+        </div>
+        <div>
+          <p class="same_color1" id="brandName">PERFORMAX</p>
+          <p id="productTitle">Panelled Zip-Front Training Tracksuit Jacket</p>
+          <p id="productPrice">Rs. 1199</p>
+          <p class="same_color1" id="productPriceOff">Rs.1499 (20% off)</p>
+          <p id="gst_p">Additional GST may apply</p>
+        </div>
+        <div>
+          <img src="./images/offers.JPG">
+          <p id="productColor">Teal</p>
+        </div>
+        <div>
+          <div class="avaliable_sizes" id="s" onclick="productSizeSelect('s')">S</div>
+          <div class="avaliable_sizes" id="m" onclick="productSizeSelect('m')">M</div>
+          <div class="avaliable_sizes" id="l" onclick="productSizeSelect('l')">L</div>
+          <div class="avaliable_sizes" id="xl" onclick="productSizeSelect('xl')">XL</div>
+          <div class="avaliable_sizes" id="xxl" onclick="productSizeSelect('xxl')">XXL</div>
+        </div>
+        <div>
+          <button onclick="addProductTocart()">ADD TO BAG</button>
+          <button onclick="displayProductDetails()">PRODUCT DETAILS</button>
+        </div>
+        <div>
+          <img src="./images/social_media_icons.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer_division">
+
+  </div>
+</body>
+
+<script src="scripts/zproductsPage.js" defer></script>
+
+<script type="module">
+  import navbar from "./components/navbar.js";
+  let navbar_division = document.getElementById("navbar_division");
+  navbar_division.innerHTML = navbar();
+</script>
+<link rel="stylesheet" href="./styles/navbar.css" />
+<script src="./scripts/navbar.js"></script>
+<script type="module">
+  import footer from "./components/footer.js";
+  let footer_division = document.getElementById("footer_division");
+  footer_division.innerHTML = footer();
+</script>
+
+<link rel="stylesheet" href="./styles/footer.css">
+<link rel="stylesheet" href="./styles/popupDetails.css">
+<script src="./scripts/singleProductView.js"></script>
+
+</html>

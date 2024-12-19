@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJIO</title>
+    <link rel="icon" href="https://assets.ajio.com/static/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/zsummary.css">
+</head>
+
+<body>
+    <div id="navbar_division">
+
+    </div>
+    <div id="shopping">
+        <div id="req">
+            <p>Thank you for shopping , your order id #FL032322323<span id="rand"></span> is confirmed.</p>
+            <p>We expect to deliver your order within 3-5 Business Days</p>
+        </div>
+        <div id="continue">
+            <button onclick="getHome()">CONTINUE SHOPPING</button>
+        </div>
+    </div>
+    <p id="sum">Order Summary</p>
+    <div id="prod">
+
+    </div>
+    <div id="footer_division">
+
+    </div>
+</body>
+
+</html>
+
+<script src="scripts/zsummary.js" defer></script>
+
+<script type="module">
+    import navbar from "./components/navbar.js";
+    let navbar_division = document.getElementById("navbar_division");
+    navbar_division.innerHTML = navbar();
+</script>
+<script type="module">
+    import footer from "./components/footer.js";
+    let footer_division = document.getElementById("footer_division");
+    footer_division.innerHTML = footer();
+</script>
+<link rel="stylesheet" href="./styles/navbar.css">
+<link rel="stylesheet" href="./styles/footer.css">
+<script src="./scripts/navbar.js"></script>
+<link rel="stylesheet" href="./styles/productDetailsPage.css" />

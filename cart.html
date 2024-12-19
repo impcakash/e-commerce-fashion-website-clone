@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Bag | AJIO</title>
+    <link rel="icon" href="https://assets.ajio.com/static/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/zcart.css">
+</head>
+
+<body>
+
+    <!-- <i class="fa fa-shopping-bag" aria-hidden="true"></i> -->
+    <div class="navbar">
+        <div>
+
+        </div>
+        <div><img src="https://assets.ajio.com/static/img/Ajio-Logo.svg" alt="logo" width="80%"></div>
+        <div id="nav">
+            <img src="./images/cart-1.png" id="cart" alt="">
+        </div>
+
+        <div></div>
+    </div>
+    <div id="dantera">
+        <img src="https://assets.ajio.com/medias/sys_master/images/i…ges/hfa/hc7/45119956189214/Dhanteras-offer-81.jpg"
+            alt="">
+    </div>
+    <h2 id="mybag">My Bag &nbsp;<span id="quan"></span>&nbsp;<span id="qu">items)</span></h2>
+    <div id="main">
+        <div id="prod">
+        </div>
+        <div id="bill">
+            <h4>Order Details</h4>
+            <br><br>
+            <p>Bag Total <span id="det1">1</span></p>
+            <br>
+            <p>Bag Discount <span id="det2">1</span></p>
+            <br>
+            <p>Delivery <span id="det3">1</span></p>
+            <br><br>
+            <h4>Total Amount <span id="det4">1</span></h4>
+            <br> <button id='btn' onclick="getAddress()">PROCEED TO SHOPPING</button>
+        </div>
+    </div>
+    <div id="banner">
+        <img src="./images/banner-1.png" alt="" width="100%">
+    </div>
+
+    <div id="footer_division">
+
+    </div>
+</body>
+
+</html>
+<script src="scripts/zcart.js" defer></script>
+<script type="module">
+    import footer from "./components/footer.js";
+    let footer_division = document.getElementById("footer_division");
+    footer_division.innerHTML = footer();
+</script>
+<link rel="stylesheet" href="./styles/footer.css">

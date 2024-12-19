@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | AJIO</title>
+    <link rel="icon" href="https://assets.ajio.com/static/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/zaddress.css">
+
+</head>
+
+<body>
+    <!-- <i class="fa fa-shopping-bag" aria-hidden="true"></i> -->
+    <div class="navbar">
+        <div>
+
+        </div>
+        <div><img src="https://assets.ajio.com/static/img/Ajio-Logo.svg" alt="logo" width="80%"></div>
+        <div id="nav">
+            <img src="./images/cart-2.png" id="cart" alt="">
+        </div>
+        <div></div>
+        <div></div>
+    </div>
+    <div id="main">
+        <div id="prod">
+            <div id="first">
+                <div><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                <div>
+                    <h4>Delivery Addresses</h4>
+                    <p>We will deliver your order to this address</p>
+                </div>
+            </div>
+            <div id="second">
+                <div><button onclick="showPop()"> + Add Address</button></div>
+                <div>Est Delivery 19 - 22 Nov</div>
+            </div>
+
+            <div id="first">
+                <div><i class="fa fa-cube" aria-hidden="true"></i></div>
+                <div>
+                    <h4> Expected Delivery</h4>
+                    <p>Estimated delivery dates for your order</p>
+                </div>
+            </div>
+            <div id="prodDetails">
+
+            </div>
+        </div>
+        <div id="bill">
+            <span id="wallet">What is Ajio's Wallet ?</span>
+            <h4 id="od">Order Details </h4>
+            <br><br>
+            <p>Bag Total <span id="det1">1</span></p>
+            <br>
+            <p>Bag Discount <span id="det2">1</span></p>
+            <br>
+            <p>Delivery <span id="det3">1</span></p>
+            <br><br>
+            <h4>Total Amount <span id="det4">1</span></h4>
+            <br> <button id='btn' onclick="getPayment()">PROCEED TO SHOPPING</button>
+        </div>
+
+    </div>
+    <div class="pop" id="pop-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="showPop()">&times;</div>
+            <p id="addNew">Add New Address</p>
+            <input type="text" id="name" placeholder="Name*" />
+            <input type="text" id="mobile" placeholder="Mobile*" />
+            <input type="text" id="pincode" placeholder="Pincode*" />
+            <input type="text" id="locality" placeholder="Locality/Area/Street*" />
+            <input type="text" id="flat" placeholder="Flat Number / Building Name*" />
+            <input type="text" id="landmark" placeholder="Landmark*" />
+            <input type="text" id="city" placeholder="City*"><input type="text" id="state" placeholder="State*" />
+            <h2 id="aT">Address Type</h2>
+            <div id="radi">
+                <input type="radio" id="home" name="drone" value="dewey">
+                <label for="dewey">Home</label>
+                <input type="radio" id="work" name="drone" value="dewey">
+                <label for="dewey">Work</label>
+                <input type="radio" id="others" name="drone" value="dewey">
+                <label for="dewey">Others</label>
+
+            </div>
+            <div id="buttons">
+                <button onclick="refresh()">Reset</button>
+                <button onclick="getPayment()">Save & Continue</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="scripts/zaddress.js" defer></script>
