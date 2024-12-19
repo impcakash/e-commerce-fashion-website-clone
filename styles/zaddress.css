@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+.navbar {
+    top: 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 12% 40% 10% 15%;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px;
+    position: fixed;
+    background-color: white;
+}
+
+#cart {
+    width: 60%;
+    margin-left: 13%;
+    height: 50px;
+}
+
+#main {
+    margin-top: 8%;
+}
+
+#main {
+    width: 70%;
+    margin-left: 15%;
+    display: grid;
+    grid-template-columns: 69% 31%;
+    grid-gap: 1%;
+    padding: 1% 1% 1% 0;
+}
+
+#bill {
+    background-color: #fafafa;
+    padding: 1.5%;
+    font-weight: 500;
+    margin-top: 15px;
+    height: 400px;
+    padding: 10px;
+}
+
+#btn {
+    background-color: #D5a249;
+    /* padding: 15px 97px 15px 97px; */
+    margin-left: 30px;
+    height: 60px;
+    width: 240px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: #D5a249;
+    border: 1px solid black;
+}
+
+#det1 {
+    padding-left: 160px;
+}
+
+#det2 {
+    padding-left: 110px;
+    color: #D5a249;
+}
+
+#det3 {
+    padding-left: 185px;
+    color: #D5a249;
+}
+
+#det4 {
+    padding-left: 130px;
+}
+
+#wallet {
+    margin: 15px 0px 25px 30px;
+    background-color: #FEFBE4;
+    padding: 10px;
+    color: #176D96;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#od {
+    margin-top: 15px;
+}
+
+.fa-map-marker,
+.fa-cube {
+    font-size: 40px;
+}
+
+#first {
+    display: grid;
+    grid-template-columns: 5% 80%;
+}
+
+#first>div:nth-child(1) {
+    margin-left: -10px;
+    margin-top: 5px;
+}
+
+#first p {
+    margin-top: 5px;
+    color: #666666;
+}
+
+#second {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin-top: 40px;
+}
+
+#second :nth-child(2) {
+    margin: 20px 50px 20px 50px;
+    border: 1px dashed black;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#second h4 {
+    color: #176D96;
+    cursor: pointer;
+}
+
+#prodDetails {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+#second button {
+    border: none;
+    font-size: 20px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.detail {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.detail img {
+    width: 100%;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.detail p {
+    padding-left: 10px;
+}
+
+.detail h5 {
+    padding-left: 10px;
+}
+
+.pop .overlay {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    display: none;
+}
+
+.pop .content {
+    position: absolute;
+    top: 440px;
+    left: 82%;
+    border: 1px solid rgb(201, 201, 201);
+    transform: translate(-50%, -50%) scale(0);
+    background-color: #fff;
+    width: 500px;
+    height: auto;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.pop .close-btn {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    padding-bottom: 4px;
+    color: white;
+    background-color: black;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.pop .active .overlay {
+    display: block;
+}
+
+.pop.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+input {
+    margin-bottom: 20px;
+    width: 90%;
+    padding: 15px;
+    border: none;
+    border-bottom: 2px solid #D5a249;
+}
+
+#radi {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    justify-content: center;
+    flex: row;
+    font-size: 15px;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 10px 0px;
+}
+
+#buttons button {
+    padding: 10px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#buttons :nth-child(2) {
+    background-color: #D5a249;
+}
+
+#addNew {
+    font-size: 30px;
+    text-align: left;
+    padding: 10px;
+}
+
+#aT {
+    margin: 20px;
+}
+
+.tag {
+    margin-left: 10px;
+    color: #D5a249;
+}
+
+.pName {
+    margin-left: 10px;
+}

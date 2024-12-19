@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 12% 40% 10% 15%;
+    border-bottom: 1px solid #e0e0e0;
+    height: 100px;
+    padding: 20px;
+    position: fixed;
+    background-color: white;
+}
+
+.navbar>div:nth-child(2) {
+    margin-top: 10px;
+}
+
+#dantera>img {
+    margin-top: 100px;
+    width: 70%;
+    margin-left: 15%;
+    height: 185px
+}
+
+#cart {
+    width: 65%;
+    margin-left: 13%;
+    height: 50px;
+}
+
+.mdiv {
+    border: 0.5px solid #ECEFF1;
+    display: grid;
+    grid-template-columns: 20% 30% 3% 5% 3% 5% 34%;
+    margin: 15px 15px 15px 0px;
+
+}
+
+.mdiv>img {
+    width: 80%;
+}
+
+#mybag {
+    width: 70%;
+    margin-top: 2%;
+    margin-left: 15%;
+}
+
+#quan,
+#qu {
+    color: silver;
+}
+
+#prodName {
+    font-size: 15px;
+    font-weight: 450;
+    padding-top: 15px;
+}
+
+#main {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 69% 31%;
+    grid-gap: 1%;
+    padding: 1% 1% 1% 0;
+}
+
+#bill {
+    background-color: #fafafa;
+    padding: 1.5%;
+    font-weight: 500;
+    margin-top: 15px;
+    height: 400px;
+    padding: 10px;
+}
+
+#btn {
+    background-color: #D5a249;
+    /* padding: 15px 97px 15px 97px; */
+    margin-left: 30px;
+    height: 60px;
+    width: 240px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: #D5a249;
+    border: 1px solid rgb(126, 126, 126);
+}
+
+#quantitySel {
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 25px;
+    width: 30px;
+    border: none;
+    background-color: white;
+}
+
+#sizeSel {
+    margin-top: 10px;
+    height: 25px;
+    width: 40px;
+    margin-left: 12px;
+    border: none;
+    background-color: white;
+}
+
+.labelClass {
+    margin-top: 10px;
+    margin-left: 7px;
+    font-weight: 600;
+    color: #999999;
+}
+
+.label2Class {
+    color: #999999;
+    margin-top: 10px;
+    margin-left: 2px;
+    font-weight: 600;
+}
+
+.priceDiv {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: 500;
+
+}
+
+.saving {
+    padding: 10px 0px;
+    padding-left: 22px;
+    font-size: 15px;
+}
+
+.dis {
+    text-decoration: line-through;
+    color: #D5a249;
+    font-size: 15px;
+}
+
+.discount {
+    margin-left: 20px;
+    margin-top: 3px;
+    text-decoration: line-through;
+    color: #D5a249;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.finalPrice {
+    margin-left: 20px;
+    padding: 0 10px;
+    background-color: #e1ecf1;
+}
+
+#det1 {
+    padding-left: 150px;
+}
+
+#det2 {
+    padding-left: 110px;
+    color: #D5a249;
+}
+
+#det3 {
+    padding-left: 185px;
+    color: #D5a249;
+}
+
+#det4 {
+    padding-left: 130px;
+}
+
+.lastD {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-gap: 20%;
+    padding: 10px;
+}
+
+.lastD button {
+    padding: 5px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 600;
+    color: #176D93;
+    font-size: 15px;
+}
+
+#banner {
+    width: 100%;
+    border: 1px solid #ECEFF1;
+}
